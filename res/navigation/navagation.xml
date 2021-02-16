@@ -5,7 +5,7 @@
 
     <fragment
         android:id="@+id/fragment_Post"
-        android:name="com.homeandroid.myapplicationcoroutines.view.Fragment.Fragment_Post"
+        android:name="com.homecat.myapplicationcoroutines.view.Fragment.Fragment_Post"
         android:label="Fragment_Post" >
         <action
             android:id="@+id/action_fragment_Post_to_fragment_detilas"
@@ -13,7 +13,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_Cart"
-        android:name="com.homeandroid.myapplicationcoroutines.view.Fragment.Fragment_Cart"
+        android:name="com.homecat.myapplicationcoroutines.view.Fragment.Fragment_Cart"
         android:label="Fragment_Cart" >
         <action
             android:id="@+id/action_fragment_Cart_to_fragment_Address"
@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_profile"
-        android:name="com.homeandroid.myapplicationcoroutines.view.Fragment.Fragment_profile"
+        android:name="com.homecat.myapplicationcoroutines.view.Fragment.Fragment_profile"
         android:label="Fragment_profile" >
         <action
             android:id="@+id/action_fragment_profile_to_fragment_Login"
@@ -29,7 +29,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_detilas"
-        android:name="com.homeandroid.myapplicationcoroutines.view.Fragment.Fragment_detilas"
+        android:name="com.homecat.myapplicationcoroutines.view.Fragment.Fragment_detilas"
         android:label="Fragment_detilas" >
         <action
             android:id="@+id/action_fragment_detilas_to_fragment_Post"
@@ -37,7 +37,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_Login"
-        android:name="com.homeandroid.myapplicationcoroutines.view.Fragment.Fragment_Login"
+        android:name="com.homecat.myapplicationcoroutines.view.Fragment.Fragment_Login"
         android:label="Fragment_Login" >
         <action
             android:id="@+id/action_fragment_Login_to_fragment_Register"
@@ -48,7 +48,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_Register"
-        android:name="com.homeandroid.myapplicationcoroutines.view.Fragment.Fragment_register"
+        android:name="com.homecat.myapplicationcoroutines.view.Fragment.Fragment_register"
         android:label="Fragment_Register" >
         <action
             android:id="@+id/action_fragment_Register_to_fragment_Login"
@@ -59,7 +59,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_Address"
-        android:name="com.homeandroid.myapplicationcoroutines.view.Fragment.Fragment_Address"
+        android:name="com.homecat.myapplicationcoroutines.view.Fragment.Fragment_Address"
         android:label="Fragment_Address" >
         <action
             android:id="@+id/action_fragment_Address_to_fragment_Order"
@@ -67,6 +67,6 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_Order"
-        android:name="com.homeandroid.myapplicationcoroutines.view.Fragment.Fragment_Order"
+        android:name="com.homecat.myapplicationcoroutines.view.Fragment.Fragment_Order"
         android:label="Fragment_Order" />
 </navigation>

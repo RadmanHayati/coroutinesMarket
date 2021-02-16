@@ -3,7 +3,7 @@
     <data>
         <variable
             name="postdetials"
-            type="com.homeandroid.myapplicationcoroutines.model.Post" />
+            type="com.homecat.myapplicationcoroutines.model.Post" />
     </data>
 
 <RelativeLayout

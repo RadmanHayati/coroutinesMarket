@@ -3,7 +3,7 @@
     <data>
         <variable
             name="data"
-            type="com.homeandroid.myapplicationcoroutines.model.Model_Userinfo" />
+            type="com.homecat.myapplicationcoroutines.model.Model_Userinfo" />
     </data>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"

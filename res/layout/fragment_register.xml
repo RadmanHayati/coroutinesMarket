@@ -3,7 +3,7 @@
     <data>
         <variable
             name="data"
-            type="com.homeandroid.myapplicationcoroutines.viewmodel.Viewmodel_register" />
+            type="com.homecat.myapplicationcoroutines.viewmodel.Viewmodel_register" />
     </data>
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"

@@ -71,7 +71,7 @@ interface Api {
     companion object {
         operator fun invoke() : Api {
             return Retrofit.Builder()
-                .baseUrl("http://192.168.43.54/shop/")
+                .baseUrl("127.0.0.1")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
                 .create(Api::class.java)

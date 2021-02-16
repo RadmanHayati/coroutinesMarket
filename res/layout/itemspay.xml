@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="post"
+            type="com.homeandroid.myapplicationcoroutines.model.Model_Pay" />
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="10dp"
+        android:layoutDirection="rtl">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/Im_post"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                app:image="@{post.image}"
+                />
+
+            <TextView
+                android:id="@+id/Tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iran"
+                android:layout_marginTop="40dp"
+                android:text="@{post.title}"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/Im_post"
+                android:textSize="13dp"
+                />
+
+            <RadioButton
+                android:id="@+id/Rg_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+            </RadioButton>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

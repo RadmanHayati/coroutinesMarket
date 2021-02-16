@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorPrimary">
+            <TextView
+                android:id="@+id/Tv_title"
+                android:text="سبد خرید شما"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/iran"
+                android:textSize="14dp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                />
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:id="@+id/Rel_price_all"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/toolbar"
+            android:background="@color/Green">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iran"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:text="پرداخت نهایی :‌">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/Tv_price_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iran"
+                android:padding="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_below="@+id/Rel_price_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/Rel_price">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <RelativeLayout
+            android:id="@+id/Rel_price"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/Green">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iran"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:text="پرداخت‌">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

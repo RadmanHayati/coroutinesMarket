@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="postdetials"
+            type="com.homeandroid.myapplicationcoroutines.model.Post" />
+    </data>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/Tv_title"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/iran"
+            android:textSize="14dp"
+            android:padding="5dp"
+            android:text="@{postdetials.title}"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="rtl"
+            android:background="#C6C2C2">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardslider"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    >
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carview_view_date"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/cardslider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/Tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iran"
+                        android:textSize="14dp"
+                        android:text="@{postdetials.date}"
+                        android:padding="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/Tv_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iran"
+                        android:textSize="14dp"
+                        android:padding="5dp"
+                        android:text="@{postdetials.view}"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@+id/carview_view_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/Tv_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/iran"
+                        android:textSize="14dp"
+                        android:lineSpacingExtra="15dp"
+                        android:text="@{postdetials.des}"
+                        android:padding="5dp"
+                        />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/Btn_addcart"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#ED1B0C"
+        android:fontFamily="@font/iran"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+
+
+    
+</layout>

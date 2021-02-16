@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="post"
+            type="com.homeandroid.myapplicationcoroutines.model.Model_Address" />
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="10dp"
+        android:layoutDirection="rtl">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text ="   نام شهر :   "
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/iran"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:text="@{post.city}"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/iran"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text =" کد ملی  :  "
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/iran"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:text="@{post.meli}"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/iran"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text =" ادرس شما   :  "
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/iran"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:text="@{post.address}"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/iran"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text =" شماره موبایل شما   :  "
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/iran"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:text="@{post.phone}"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/iran"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text =" شماره تلفن شما   :  "
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/iran"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:text="@{post.tell}"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/iran"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

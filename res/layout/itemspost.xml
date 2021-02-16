@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="post"
+            type="com.homeandroid.myapplicationcoroutines.model.Model_Post" />
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="10dp"
+        android:layoutDirection="rtl">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/Im_post"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                app:image="@{post.imageurl}"
+                />
+
+            <TextView
+                android:id="@+id/Tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iran"
+                android:layout_marginTop="40dp"
+                android:text="@{post.title}"
+                android:layout_toEndOf="@+id/Im_post"
+                android:textSize="13dp"
+                />
+
+            <TextView
+                android:id="@+id/Tv_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iran"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/Tv_title"
+                android:layout_toEndOf="@+id/Im_post"
+                android:textSize="13dp"
+                />
+
+            <TextView
+                android:id="@+id/Tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iran"
+                android:layout_marginBottom="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/Im_post"
+                android:text="@{post.date}"
+                android:textSize="13dp"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="data"
+            type="com.homeandroid.myapplicationcoroutines.viewmodel.Viewmodel_register" />
+    </data>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_post">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorPrimary">
+            <TextView
+                android:id="@+id/Tv_title"
+                android:text=" ثبت نام    "
+                android:layout_width="match_parent"
+                android:fontFamily="@font/iran"
+                android:textSize="14dp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                />
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/shape"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@={data.name}"
+                android:fontFamily="@font/iran"
+                android:layout_margin="10dp"
+                android:hint="لطفا نام خود وارد کنید...">
+
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@={data.mobile}"
+                android:fontFamily="@font/iran"
+                android:layout_margin="10dp"
+                android:hint="لطفا شماره موبایل وارد کنید...">
+
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@={data.email}"
+                android:fontFamily="@font/iran"
+                android:layout_margin="10dp"
+                android:hint="لطفا ایمیل خود وارد کنید...">
+
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fontFamily="@font/iran"
+                android:layout_margin="10dp"
+                android:text="@={data.pass}"
+                android:hint="لطفا رمز عبور وارد کنید...">
+
+            </EditText>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iran"
+                android:padding="10dp"
+                android:onClick="@{data.ClickBtn_login}"
+                android:layout_margin="10dp"
+                android:text="ثبت نام">
+
+            </Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iran"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:onClick="@{data.ClickBtn_intent_register}"
+                android:text="قبلا ثبت نام کرده اید!">
+
+            </Button>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

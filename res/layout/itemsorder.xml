@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="post"
+            type="com.homeandroid.myapplicationcoroutines.model.Model_Listorder" />
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="10dp"
+        android:layoutDirection="rtl">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text ="   شماره سفارش :   "
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/iran"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:text="@{post.id}"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/iran"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text =" مجموع پرداخت  :  "
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/iran"
+                    android:padding="10dp"
+                    android:textColor="@color/Green"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:text="@{post.price}"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/iran"
+                    android:padding="10dp"
+                    android:textColor="@color/Green"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Liner_success"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@color/Green">
+            <TextView
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/iran"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="پرداخت موفق"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Liner_notprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="@color/Read">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/iran"
+                    android:padding="10dp"
+                    android:text="پرداخت ناموفق"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
